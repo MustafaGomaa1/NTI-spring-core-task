@@ -12,13 +12,15 @@ public class SmsNotify implements Notify {
     @Override
     public void addedEmployee(String message, Employee employee) {
         System.out.println(
-                "{SMS} :" + message + " .\nTo ========> { " + employee.getName() + " }" + "\nUser Added==============");
+                "{SMS} :" + message + " .\nTo ========> { " + employee.getName() + " }"
+                        + "\nUser Added <==============>");
     }
 
     @Override
     public void riseEmployeeSalary(String message, Employee employee) {
         System.out.println(
-                "{SMS} :" + message + " .\nTo ========> { " + employee.getName() + " }" + "\nSalary Raise.=====");
+                "{SMS} :" + message + " .\nTo ========> { " + employee.getName() + " }"
+                        + "\nSalary Raise.<=============>");
     }
 
 }

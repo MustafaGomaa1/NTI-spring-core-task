@@ -10,6 +10,7 @@ import com.example.service.EmployeeService;
 public class Main {
     public static void main(String[] args) {
         try {
+            @SuppressWarnings("resource")
             ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
             Employee employee = new Employee(1, "Mustafa", 5000);
